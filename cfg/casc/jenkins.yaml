@@ -1,0 +1,10 @@
+jenkins:
+  systemMessage: "Jenkins configured automatically by Jenkins Configuration as Code plugin\n"
+  numExecutors: 7
+  scmCheckoutRetryCount: 2
+  mode: NORMAL
+
+# Jenkins URL
+unclassified:
+  location:
+    url: http://localhost:8080/

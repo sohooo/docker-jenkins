@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# ---------------
+# useful commands
+# ---------------
+
+# cleanup local jenkins data
+rm -rf data
+mkdir data
+
+# deploy configs
+cp -rv cfg/* data
+
+# building image
+docker build --tag myjenkins:1.0 .
+
+# running image
+docker run --name jenkins \
+         --rm \
+         -p 8080:8080 \
+         -p 50000:50000 \
+         --env JAVA_OPTS="-Dcasc.jenkins.config=/var/jenkins_home/casc/ -Dhudson.footerURL=https://svensporer.net -Djenkins.install.runSetupWizard=false -Dhudson.model.UpdateCenter.never=true" \
+         -v `pwd`/data:/var/jenkins_home myjenkins:1.0
+
+# --detach \
+
+# --env JAVA_OPTS="-Dcasc.jenkins.config=/var/jenkins_home/casc.yaml -Dhudson.footerURL=https://svensporer.net -Djenkins.install.runSetupWizard=false -Dhudson.model.UpdateCenter.never=true" \
+#--env JAVA_OPTS="-Djava.util.logging.config.file=/var/jenkins_home/log.properties -Dhudson.footerURL=https://svensporer.net" \
+
+
+# update
+# create backup of data
+# docker image rm myjenkins:1.0 # optional
+
+# building image
+docker build --tag myjenkins:1.1 .
+docker run ...
+
+# swarm client
+wget https://repo.jenkins-ci.org/releases/org/jenkins-ci/plugins/swarm-client/3.9/swarm-client-3.9.jar
+
+

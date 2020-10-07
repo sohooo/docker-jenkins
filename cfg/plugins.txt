@@ -1,0 +1,13 @@
+blueocean
+configuration-as-code
+global-slack-notifier
+slack
+swarm
+matrix-auth
+periodicbackup
+ansicolor
+greenballs
+mask-passwords
+hashicorp-vault
+jobConfigHistory
+
