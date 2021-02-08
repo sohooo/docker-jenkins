@@ -2,12 +2,11 @@ blueocean
 configuration-as-code
 global-slack-notifier
 slack
-swarm
+ssh-agent
 matrix-auth
 periodicbackup
 ansicolor
 greenballs
 mask-passwords
-hashicorp-vault
 jobConfigHistory
 
