@@ -2,7 +2,7 @@ blueocean
 configuration-as-code
 global-slack-notifier
 slack
-ssh-agent
+ssh-slaves
 matrix-auth
 periodicbackup
 ansicolor
