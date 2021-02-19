@@ -3,10 +3,15 @@ configuration-as-code
 global-slack-notifier
 slack
 ssh-slaves
+subversion
+maven-plugin
 matrix-auth
 periodicbackup
 ansicolor
 greenballs
 mask-passwords
 jobConfigHistory
+hashicorp-vault-plugin
+reverse-proxy-auth-plugin
+display-url-api
 
