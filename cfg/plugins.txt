@@ -6,6 +6,7 @@ display-url-api
 global-slack-notifier
 greenballs
 hashicorp-vault-plugin
+job-import-plugin
 jobConfigHistory
 markdown-formatter
 mask-passwords
