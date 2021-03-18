@@ -3,9 +3,11 @@ ansicolor
 blueocean
 configuration-as-code
 display-url-api
+gitlab-plugin
 global-slack-notifier
 greenballs
 hashicorp-vault-plugin
+influxdb
 job-import-plugin
 jobConfigHistory
 markdown-formatter
