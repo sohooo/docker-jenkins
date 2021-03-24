@@ -4,7 +4,6 @@ blueocean
 configuration-as-code
 display-url-api
 gitlab-plugin
-global-slack-notifier
 greenballs
 hashicorp-vault-plugin
 influxdb
@@ -13,11 +12,11 @@ jobConfigHistory
 markdown-formatter
 mask-passwords
 matrix-auth
+mattermost
 maven-plugin
 periodicbackup
 reverse-proxy-auth-plugin
 role-strategy
-slack
 ssh-slaves
 ssh-steps
 subversion
